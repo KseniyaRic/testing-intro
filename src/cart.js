@@ -40,12 +40,10 @@ return cart.map((item) =>
     );
  }
 function removeFromCart(cart, ProductId) {
-cart = cart.filter((i) => i.id !== ProductId);
-return cart;
+return cart.filter((item) => item.id !== ProductId);
  }
 function calculateCartSubtotal(cart) {
-const totalQuantity = cart.reduce((sum, i), 0);
-return totalQuantity;
+
 
 }
 function calculateOrderTotal() { return notImplemented(); }
