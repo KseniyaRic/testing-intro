@@ -10,7 +10,7 @@ describe('filterByCategory', () => {
     const resultIds = getIds(filteredProducts);
     expect(resultIds).toEqual([1, 2, 3, 4, 5, 6]);
     });
-    });
+
 
   test("undefined возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
 const filteredProducts = filterByCategory(products, undefined);
@@ -23,7 +23,7 @@ const filteredProducts = filterByCategory(products, undefined);
   const resultIds = getIds(filteredProducts);
     expect(resultIds).toEqual([1, 2, 3, 4, 5, 6]);
     });
-
+  });
      describe('существующая категория', () => {
 
   test("'electronics' возвращает товары с ID [1, 2]", () => {
